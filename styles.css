@@ -4,6 +4,11 @@ body {
     text-align: center;
 }
 
+/* Ẩn audio player */
+audio {
+    display: none;
+}
+
 .container {
     max-width: 32rem;
     margin: 0 auto;
@@ -14,13 +19,66 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
+    padding: 2rem 0;
+}
+
+/* Logo styling */
+.logo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.logo-img {
+    max-width: 250px;
+    height: auto;
+    max-height: 100px;
+    animation: zoomInOut 2s ease-in-out infinite;
+}
+
+@keyframes zoomInOut {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
 
 .gift {
     padding: 0 4rem;
     margin: 1rem 0;
+}
+
+/* Center section styling */
+.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    justify-content: center;
+}
+
+/* Ảnh gif styling */
+.gif-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.gif-img {
+    max-width: 330px;
+    height: auto;
+    max-height: 100px;
+    
 }
 
 img {
