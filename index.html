@@ -12,7 +12,18 @@
 
 <body>
 
+    <!-- Audio player -->
+    <audio id="backgroundMusic" loop autoplay>
+        <source src="/images/BLACK.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
     <div class="container">
+        <!-- Logo ở trên cùng -->
+        <div class="logo">
+            <img src="/images/logo.png" alt="Logo" class="logo-img">
+        </div>
+        
         <div class="center">
             <div class="gift" onclick="openGift()">
                 <img src="/images/qua1.png" alt="Placeholder Image">
@@ -23,6 +34,11 @@
             <div class="gift" onclick="openGift()">
                 <img src="/images/qua3.png" alt="Placeholder Image">
             </div>
+        </div>
+        
+        <!-- Ảnh gif ở dưới -->
+        <div class="gif-container">
+            <img src="/images/moiip.png" alt="Animation" class="gif-img">
         </div>
     </div>
     <!-- Modal -->
